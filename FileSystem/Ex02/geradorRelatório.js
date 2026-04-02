@@ -7,7 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 async function verificarArquivo(){
     try{
         await access(join(__dirname, 'relatorio.txt'))
-        console.log("Arquivo já existe!");
+        console.log(`Relatório gerado em: ${__dirname}`);
         return true
     } catch {
         console.log("Arquivo ainda não existe!");

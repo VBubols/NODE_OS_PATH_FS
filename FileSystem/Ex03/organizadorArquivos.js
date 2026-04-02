@@ -14,7 +14,7 @@ export async function organizarArquivos(){
         for(const arquivo of arquivos){
             if(arquivo.endsWith('.txt')){
                 await rename(join(origem, arquivo), join(textos, arquivo))
-                console.log(`Arquivo: ${arquivo} movido para Textos`)
+                console.log(`Arquivo: ${arquivo} movido para ${textos}`)
             }
         }
         console.log("Arquivos organizados com sucesso!")

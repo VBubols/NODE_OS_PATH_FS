@@ -8,7 +8,7 @@ export async function leitorLog() {
     try{
         const arquivo = await readFile(join(__dirname, 'log.txt'), 'UTF-8');
         const linhas = arquivo.split('\n').length
-        console.log(linhas);    
+        console.log(`Quantidade de linhas: ${linhas}`);    
     }catch(err) {
         console.log(`Erro: ${err}`);
     }
